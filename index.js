@@ -6,12 +6,21 @@
 
 function ganar()
 {
+    var j1 = document.getElementById("j1");
+    var j2 = document.getElementById("j2");
+
     if ((pox[0]==pox[1] && pox[1]==pox[2]) 
-     || (pox[0]==pox[3] && pox[3]==pox[6]) )
+     || (pox[3]==pox[4] && pox[4]==pox[5])
+     || (pox[6]==pox[7] && pox[7]==pox[8])     
+     || (pox[0]==pox[3] && pox[3]==pox[6])
+     || (pox[1]==pox[4] && pox[4]==pox[7])
+     || (pox[2]==pox[5] && pox[5]==pox[8])
+     || (pox[0]==pox[4] && pox[4]==pox[8])
+     || (pox[2]==pox[4] && pox[4]==pox[6]) )
         
     {        
-        if (i=="X") alert("GANASTE: Jugador 1");
-        else alert("GANASTE: Jugador 2");
+        if (i=="X") confirm("GANASTE: "+j1.value);
+        else confirm("GANASTE: "+j2.value);
         location.reload();
     }
 }
@@ -19,15 +28,15 @@ function ganar()
 
 var i = "O";
 
-function pepe(n)
+function func(n)
 {
-   var pp = "pos"+n;
-   var nodo = document.getElementById(pp);
+   var p = "pos"+n;
+   var nodo = document.getElementById(p);
    if (i == "O") i="X";
     else i="O";
-   var tx = document.createTextNode(i);
+   var x = document.createTextNode(i);
    pox[n-1] = i; 
-   nodo.append(tx);
+   nodo.append(x);
    nodo.onclick="";
    nodo.id = "posx";
    ganar();

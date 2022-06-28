@@ -9,39 +9,6 @@ h1, h2, h3{
     color: darkblue;
 }
 
-#players{    
-    background-color: rgb(235, 165, 75);   
-    border-width: 1px; 
-    border-color: black;    
-    border-style: inset;
-
-
-    text-align: center;
-    width: 50%;
-}
-
-.player{
-    background-color: aquamarine;
-    margin: 5px;
-    width: fit-content;  
-    display: inline;    
-}
-
-#player3{
-    width: 50%;
-    background-color: blue;
-    
-}
-
-#game{
-    width: 90%;
-    background-color: aqua;
-    text-align: center;
-}
-#lines{
-    width: 100%;
-    background-color: aquamarine;
-}
 #tabla1{
     width: 50%;
     background-color: aquamarine;
@@ -55,16 +22,7 @@ h1, h2, h3{
 
 .texto1{
     font-weight: bold;
-
 }
-
-#div1{
-    background-color: azure;
-    width: 50%;
-    text-align: center;
-    align-self: auto;
-}
-
 
 
 .pos{
@@ -78,8 +36,7 @@ h1, h2, h3{
     
 }
 .pos:hover{
-    background-color: aliceblue;
-    color: black;
+    background-color: darkblue;   
 
 }
 
